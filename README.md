@@ -62,3 +62,32 @@ This repository contains slides and hands-on labs for the Platform Engineering b
 - [5.2 - Scheduling](./modules/linux/labs/5.2-scheduling.md)
 - [5.3 - SELinux Basics](./modules/linux/labs/5.3-selinux-basics.md)
 - [5.4 - System Administration Tool](./modules/linux/labs/5.4-sys-admin-tool.md)
+
+## Networking Labs
+
+### Day 1: Networking Fundamentals
+- [1.0 - Cisco Packet Tracer Install](./modules/networking/labs/1.0-cisco-packet-tracer-install.md)
+- [1.1 - Networking Fundamentals with Cisco](./modules/networking/labs/1.1-networking-fundamentals-cisco.md)
+- [1.2 - VLSM Address Design](./modules/networking/labs/1.2-vlsm-address-design.md)
+- [1.3 - IPv6 Configuration](./modules/networking/labs/1.3-ipv6-configuration.md)
+
+### Day 2: VLANs and Switching
+- [2.1 - VLANs and Trunking](./modules/networking/labs/2.1-vlans-trunking.md)
+- [2.2 - Inter-VLAN Routing](./modules/networking/labs/2.2-inter-vlan-routing.md)
+- [2.3 - STP and EtherChannel](./modules/networking/labs/2.3-stp-etherchannel.md)
+
+### Day 3: AWS VPC Basics
+- [3.0 - AWS EC2 Introduction](./modules/networking/labs/3.0-aws-ec2-introduction.md)
+- [3.1 - Building a VPC Architecture in AWS](./modules/networking/labs/3.1-building-vpc-architecture-aws.md)
+- [3.2 - AWS Security Groups](./modules/networking/labs/3.2-aws-security-groups.md)
+- [3.3 - AWS Network ACLs](./modules/networking/labs/3.3-aws-network-acls.md)
+
+### Day 4: Advanced AWS Networking
+- [4.1 - DNS Configuration with Route53](./modules/networking/labs/4.1-dns-configuration-route53.md)
+- [4.2 - Load Balanced Web Tier](./modules/networking/labs/4.2-load-balanced-web-tier.md)
+- [4.3 - VPC Peering and Hybrid Connectivity](./modules/networking/labs/4.3-vpc-peering-hybrid-connectivity.md)
+
+### Day 5: High Availability and Troubleshooting
+- [5.1 - Multi-AZ High Availability Web Application](./modules/networking/labs/5.1-multi-az-high-availability-web-application.md)
+- [5.2 - VPN Failover and CloudWatch Monitoring](./modules/networking/labs/5.2-vpn-failover-cloudwatch-monitoring.md)
+- [5.3 - Troubleshooting Broken VPC](./modules/networking/labs/5.3-troubleshooting-broken-vpc.md)
