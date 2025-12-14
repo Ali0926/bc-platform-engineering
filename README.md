@@ -120,3 +120,13 @@ This repository contains slides and hands-on labs for the Platform Engineering b
 - [5.1 - Terraform Unit Testing](./modules/terraform/labs/5.1-terraform-unit-testing.md)
 - [5.2 - Terraform Integration Testing](./modules/terraform/labs/5.2-terraform-integration-testing.md)
 - [5.3 - Terraform Challenge](./modules/terraform/labs/5.3-terraform-challange.md)
+
+## Ansible Labs
+
+### Day 1
+- [1.0 - Connect to Ansible Controller](./modules/ansible/labs/setup/index.md)    
+- [1.1 - Ansible inventory](./modules/ansible/labs/inventory)    
+- [1.2 - Ansible ad-hoc](./modules/ansible/labs/ad-hoc)   
+- [1.3 - Ansible playbook fundamentals](./modules/ansible/labs/playbook-fun)    
+
+
