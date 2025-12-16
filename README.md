@@ -129,4 +129,7 @@ This repository contains slides and hands-on labs for the Platform Engineering b
 - [1.2 - Ansible ad-hoc](./modules/ansible/labs/ad-hoc)   
 - [1.3 - Ansible playbook fundamentals](./modules/ansible/labs/playbook-fun)    
 
+### Day 2
+- [2.1 - Ansible Roles](./modules/ansible/labs/roles/index.md)    
+- [2.2 - AAP Inventory and Credentials](./modules/ansible/labs/aap-inventory-creds-ad-hoc/index_shared.md)    
 
