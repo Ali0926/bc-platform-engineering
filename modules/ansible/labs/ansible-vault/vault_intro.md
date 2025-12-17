@@ -6,11 +6,6 @@ There are several features unique to Ansible playbooks that provide robust funct
 
 ## Tasks
 
-Log in to the control node as `ec2-user` and sudo to the `ansible` user.
- ```
- sudo su - ansible
- ```
-
 ### Prerequisites
 
 Before we begin, we need to pull the latest changes from our lab repo.
@@ -18,7 +13,7 @@ Before we begin, we need to pull the latest changes from our lab repo.
 cd into the lab repo directory and pull updates.
 
 ```
-cd ~/ansible-best-practices && git pull
+cd ~/automation-dev && git pull
 ```
 
 
@@ -33,11 +28,11 @@ mkdir /home/ansible/lab-vault && cd /home/ansible/lab-vault
 
 ### Use ansible-vault to protect the confidential information
 
-Use `ansible-vault` to encrypt `/home/ansible/ansible-best-practices/labs/ansible-vault/conf/confidential` to protect the confidential information stored within using the password "I love ansible".
+Use `ansible-vault` to encrypt `/home/ansible/automation-dev/labs/ansible-vault/conf/confidential` to protect the confidential information stored within using the password "I love ansible".
 
 Run 
 ```
-ansible-vault encrypt /home/ansible/ansible-best-practices/labs/ansible-vault/conf/confidential
+ansible-vault encrypt /home/ansible/automation-dev/labs/ansible-vault/conf/confidential
 ```
 and supply the password "I love ansible".
 
@@ -52,7 +47,7 @@ Create the file `/home/ansible/lab-vault/webserver.yml` and add the following co
 - hosts: webservers
   become: yes
   vars_files:
-    - /home/ansible/ansible-best-practices/labs/ansible-vault/conf/confidential
+    - /home/ansible/automation-dev/labs/ansible-vault/conf/confidential
   tasks:
     - name: install httpd
       yum:
@@ -72,21 +67,21 @@ Create the file `/home/ansible/lab-vault/webserver.yml` and add the following co
 
 ### Deploy the templates stored on the control node to the webservers group
 
-Configure `webserver.yml` to deploy the templates `/home/ansible/ansible-best-practices/labs/ansible-vault/conf/vhost.conf.j2` and `/home/ansible/ansible-best-practices/labs/ansible-vault/conf/htpasswd.j2` to the `webservers` group. `httpd` must restart on config change. The tasks should be tagged `vhost`.
+Configure `webserver.yml` to deploy the templates `/home/ansible/automation-dev/labs/ansible-vault/conf/vhost.conf.j2` and `/home/ansible/automation-dev/labs/ansible-vault/conf/htpasswd.j2` to the `webservers` group. `httpd` must restart on config change. The tasks should be tagged `vhost`.
 
 Add the following text to `webserver.yml` just **before** the handler section:
 
 ```yaml
     - name: configure virtual host
       template:
-        src: /home/ansible/ansible-best-practices/labs/ansible-vault/conf/vhost.conf.j2
+        src: /home/ansible/automation-dev/labs/ansible-vault/conf/vhost.conf.j2
         dest: /etc/httpd/conf.d/vhost.conf
       notify: httpd service
       tags:
         - vhost
     - name: configure site auth
       template:
-        src: /home/ansible/ansible-best-practices/labs/ansible-vault/conf/htpasswd.j2
+        src: /home/ansible/automation-dev/labs/ansible-vault/conf/htpasswd.j2
         dest: /etc/httpd/conf/htpasswd
       notify: httpd service
       tags:
@@ -102,12 +97,12 @@ Add the following task to the `webserver.yml` **after* the `configure site auth`
 ```yaml
     - name: copy data job to all hosts
       copy:
-        src: "/home/ansible/ansible-best-practices/labs/ansible-vault/bin/data-job.sh"
+        src: "/home/ansible/automation-dev/labs/ansible-vault/bin/data-job.sh"
         dest: /opt/data-job.sh
         mode: 775
 ```
 
-Configure `webserver.yml` to asynchronously execute `/home/ansible/ansible-best-practices/labs/ansible-vault/bin/data-job.sh` located on the webservers with a timeout of 600 seconds and no polling. The task should be tagged with `data-job`.
+Configure `webserver.yml` to asynchronously execute `/home/ansible/automation-dev/labs/ansible-vault/bin/data-job.sh` located on the webservers with a timeout of 600 seconds and no polling. The task should be tagged with `data-job`.
 
 Add the following text to `webserver.yml` just **before** the handler section:
 
@@ -127,7 +122,7 @@ Add the following text to `webserver.yml` just **before** the handler section:
 - hosts: webservers
   become: yes
   vars_files:
-    - /home/ansible/ansible-best-practices/labs/ansible-vault/conf/confidential
+    - /home/ansible/automation-dev/labs/ansible-vault/conf/confidential
   tasks:
     - name: install httpd
       yum:
@@ -138,21 +133,21 @@ Add the following text to `webserver.yml` just **before** the handler section:
         - base-install
     - name: configure virtual host
       template:
-        src: /home/ansible/ansible-best-practices/labs/ansible-vault/conf/vhost.conf.j2
+        src: /home/ansible/automation-dev/labs/ansible-vault/conf/vhost.conf.j2
         dest: /etc/httpd/conf.d/vhost.conf
       notify: httpd service
       tags:
         - vhost
     - name: configure site auth
       template:
-        src: /home/ansible/ansible-best-practices/labs/ansible-vault/conf/htpasswd.j2
+        src: /home/ansible/automation-dev/labs/ansible-vault/conf/htpasswd.j2
         dest: /etc/httpd/conf/htpasswd
       notify: httpd service
       tags:
         - vhost
     - name: copy data job to all hosts
       copy:
-        src: "/home/ansible/ansible-best-practices/labs/ansible-vault/bin/data-job.sh"
+        src: "/home/ansible/automation-dev/labs/ansible-vault/bin/data-job.sh"
         dest: /opt/data-job.sh
         mode: 755
     - name: run data job

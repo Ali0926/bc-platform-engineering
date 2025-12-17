@@ -133,3 +133,7 @@ This repository contains slides and hands-on labs for the Platform Engineering b
 - [2.1 - Ansible Roles](./modules/ansible/labs/roles/roles_intro.md)    
 - [2.2 - AAP Inventory and Credentials](./modules/ansible/labs/aap-inventory-creds-ad-hoc/index_shared.md)    
 
+### Day 3
+- [3.1 - AAP Projects and Jobs](./modules/ansible/labs/aap-projects-templates-jobs/index_shared.md)    
+- [3.2 - Ansible Playbook Error Handling](./modules/ansible/labs/error-handling/error_handling_intro.md)   
+- [3.3 - Ansible Templates](./modules/ansible/labs/templates/templates_intro.md)    
