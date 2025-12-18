@@ -22,11 +22,11 @@ Click the **Add** button
 
 Fill in the values for the new user:
 
-- **First Name**: Werner
-- **Last Name**: Web
-- **Email**: wweb@example.com
+- **First Name**: Werner-[your_initials]
+- **Last Name**: Web-[your_initials]
+- **Email**: wweb-[your_initials]@example.com
 
-* **Username**: wweb
+* **Username**: wweb-[your_initials]
 * **Password**: ansible
 
 * **Confirm Password**: ansible 
@@ -48,16 +48,16 @@ Create a Team:
 
 In the menu go to **Access → Teams**
 
-Click the **Add** button and create a team named `Web Content` within the `Default` Organization.
+Click the **Add** button and create a team named `Web Content-[your_initials]` within the `Default` Organization.
 
 - Click **Save**
 
 Add a user to the team:
 
-- Click on the team `Web Content` and click the **Access** tab and click **Add**.
+- Click on the team `Web Content-[your_initials]` and click the **Access** tab and click **Add**.
 - Within the **Select a Resource Type** window, click on the **Users** resource type and click **Next**.
-- Within the **Select Items from List**, select the checkbox next to the `wweb` user and click **Next**.
-- Within the **Select Roles to Apply**, select **Member** as the role to apply to the `wweb` user.
+- Within the **Select Items from List**, select the checkbox next to the `wweb-[your_initials]` user and click **Next**.
+- Within the **Select Roles to Apply**, select **Member** as the role to apply to the `wweb-[your_initials]` user.
 
 Click **Save**.
 
@@ -67,15 +67,15 @@ Permissions allow to read, modify, and administer projects, inventories, and oth
 
 ## Granting permissions
 
-To allow users or teams to actually do something, you have to set permissions. The user **wweb** should only be allowed to modify content of the assigned webservers.
+To allow users or teams to actually do something, you have to set permissions. The user **wweb-[your_initials]** should only be allowed to modify content of the assigned webservers.
 
-Add the permission to use the `Create index.html` template:
+Add the permission to use the `Create index.html-[your_initials]` template:
 
-- Within **Resources** -> **Templates**, select `Create index.html`.
+- Within **Resources** -> **Templates**, select `Create index.html-[your_initials]`.
 - Select **Access** tab from the menu and click **Add**.
 - Within the **Select a Resource Type** window, click on the **Users** resource type and click **Next**.
-- Within the **Select Items from List**, select the checkbox next to the `wweb` user and click **Next**.
-- Within the **Select Roles to Apply**, select **Read** and **Execute** as the roles to apply to the `wweb` user.
+- Within the **Select Items from List**, select the checkbox next to the `wweb-[your_initials]` user and click **Next**.
+- Within the **Select Roles to Apply**, select **Read** and **Execute** as the roles to apply to the `wweb-[your_initials]` user.
 - Click **Save**
 
 
@@ -84,16 +84,16 @@ Add the permission to use the `Create index.html` template:
 
 ## Test permissions
 
-Now log out of Automation Controller’s web UI and in again as the **wweb** user.
+Now log out of Automation Controller’s web UI and in again as the **wweb-[your_initials]** user.
 
-- Go to the **Templates** view, you should notice for **wweb** only the `Create index.html` template is listed. He is allowed to view and launch, but not to edit the Template (no Edit button available).
+- Go to the **Templates** view, you should notice for **wweb** only the `Create index.html-[your_initials]` template is listed. He is allowed to view and launch, but not to edit the Template (no Edit button available).
 - Run the Job Template by clicking the rocket icon. Enter the values for the survey questions and launch the job.
 - In the following **Jobs** view have a good look around, note that there were changes to the host (as expected).
 
-Check the result: execute `curl` again  to pull the content of the webserver on `centos` :
+Check the result: execute `curl` again  to pull the content of the webserver on `Server 1` :
 
 ```bash
-#> curl http://<your centos server's IP>
+#> curl http://<Server 2 IP>
 ```
 
 You enabled a restricted user to run an Ansible playbook

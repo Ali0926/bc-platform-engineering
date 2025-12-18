@@ -44,19 +44,19 @@ Create a new Job Template for installing Apache.
 
 Fill in the following: 
 
-* **Name**: Install Apache
+* **Name**: Install Apache-[your_initials]
 
 * **Job Type**: Run
 
-* **Inventory**: First Inventory
+* **Inventory**: First Inventory-[your_initials]
 
-* **Project**: Ansible Workshop Examples
+* **Project**: Ansible Workshop Examples-[your_initials]
 
 * **Execution Environment**: Default
 
 * **Playbook**: `/rhel/apache/apache_install.yml`
 
-* **Credentials**: Linux credentials
+* **Credentials**: Linux credentials-[your_initials]
 
 * **Options**: The tasks need to run as `root` so check **Privilege Escalation**
 
@@ -89,7 +89,7 @@ You have already been through all the steps needed, so try this for yourself.
 <details>
   <summary>Click here to expand</summary>
 
-Go to Resources → Inventories → First Inventory
+Go to Resources → Inventories → First Inventory-[your_initials]
 
 
 
@@ -105,7 +105,7 @@ Within the Execution Environment window, select Default execution environment an
 
 
 
-Within the Machine Credential window, select Linux Server credentials and click Launch.
+Within the Machine Credential window, select Linux Server credentials-[your_initials] and click Launch.
 
 </details>
 
@@ -116,8 +116,8 @@ Within the Machine Credential window, select Linux Server credentials and click 
 You have installed Apache on your nodes in the job you just ran. Now we’re going to extend this:
 
 - Use a proper role that has a Jinja2 template to deploy an `index.html` file.
-- Create a job **Template** with a survey to collect the values for the `index.html` template.
-- Launch the job **Template**
+- Create a job **Template-[your_initials]** with a survey to collect the values for the `index.html` template.
+- Launch the job **Template-[your_initials]**
 
 Additionally, the role will make sure that the Apache configuration is properly set up for this exercise.
 
@@ -155,7 +155,7 @@ What is this playbook doing? It creates a file (**dest**) on the managed hosts f
 
 The role deploys a static configuration for Apache. This is to make sure that all changes done in the previous chapters are overwritten and your examples work properly.
 
-Because the playbook and role is located in the same Github repo as the `apache_install.yml` playbook you don’t have to configure a new project for this exercise.
+Because the playbook and role is located in the same GitHub repo as the `apache_install.yml` playbook you don’t have to configure a new project for this exercise.
 
 
 
@@ -169,13 +169,13 @@ Go to **Resources → Templates**, click the **Add** button and choose **Add job
 
 Fill out the following information:
 
-* **Name**: Create index.html
+* **Name**: Create index.html-[your_initials]
 * **Job Type**: Run
-* **Inventory**: First Inventory
-* **Project**: Ansible Workshop Examples
+* **Inventory**: First Inventory-[your_initials]
+* **Project**: Ansible Workshop Examples-[your_initials]
 * **Execution Environment**: Default
 * **Playbook**: rhel/apache/apache_role_install.yml
-* **Credentials**:  Linux Server credentials
+* **Credentials**:  Linux Server credentials-[your_initials]
 * **Limit**: web
 * **Options**: Privilege Escalation
 
@@ -223,7 +223,7 @@ In the same fashion add a second **Survey Question**
 
 ### Launch the Template
 
-Now launch **Create index.html** job template by selecting the **Details** tab and clicking the **Launch** button.
+Now launch **Create index.html-[your_initials]** job template by selecting the **Details** tab and clicking the **Launch** button.
 
 Before the actual launch, the survey will ask for **First Line** and **Second Line**. Fill in some text and click **Next**. The **Preview** window shows the values
 

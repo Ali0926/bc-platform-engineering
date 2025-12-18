@@ -137,3 +137,8 @@ This repository contains slides and hands-on labs for the Platform Engineering b
 - [3.1 - AAP Projects and Jobs](./modules/ansible/labs/aap-projects-templates-jobs/index_shared.md)    
 - [3.2 - Ansible Playbook Error Handling](./modules/ansible/labs/error-handling/error_handling_intro.md)   
 - [3.3 - Ansible Templates](./modules/ansible/labs/templates/templates_intro.md)    
+
+### Day 4
+- [4.1 - Ansible Surveys](./modules/ansible/labs/aap-surveys/index.md)    
+- [4.2 - Ansible Vault](./modules/ansible/labs/ansible-vault/vault_intro.md)    
+- [4.3 - RBAC](./modules/ansible/labs/rbac/vault_intro.md)    
