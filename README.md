@@ -142,3 +142,30 @@ This repository contains slides and hands-on labs for the Platform Engineering b
 - [4.1 - Ansible Surveys](./modules/ansible/labs/aap-surveys/index.md)    
 - [4.2 - Ansible Vault](./modules/ansible/labs/ansible-vault/vault_intro.md)    
 - [4.3 - RBAC](./modules/ansible/labs/aap-rbac/index.md)    
+
+## Infrastructure Automation Tools
+
+### Day 1
+- [1.1 - GitHub Workflow](./modules/InfraAutomation/labs/1.1-github-workflow.md)
+- [1.2 - GitHub Workflow Docker](./modules/InfraAutomation/labs/1.2-github-workflow-docker.md)
+- [1.3 - GitHub Workflow Enhancements](./modules/InfraAutomation/labs/1.3-github-workflow-enhancements.md)
+- [1.4 - GitHub OIDC](./modules/InfraAutomation/labs/1.4-github-oidc.md)
+
+### Day 2
+- [2.1 - Jenkins Docker](./modules/InfraAutomation/labs/2.1-jenkins-docker.md)
+- [2.2 - Manual Deployment](./modules/InfraAutomation/labs/2.2-manual-deployment.md)
+- [2.3 - Ansible Deployment](./modules/InfraAutomation/labs/2.3-ansible-deployment.md)
+
+### Day 3
+- [3.1 - Terraform Infra](./modules/InfraAutomation/labs/3.1-terraform-infra.md)
+- [3.2 - Packer Golden AMI](./modules/InfraAutomation/labs/3.2-packer-golden-ami.md)
+- [3.3 - Terraform Custom AMI](./modules/InfraAutomation/labs/3.3-terraform-custom-ami.md)
+
+### Day 4
+- [4.1 - Zero Downtime Deployment](./modules/InfraAutomation/labs/4.1-zero-downtime-deployment.md)
+- [4.2 - Kubernetes ArgoCD](./modules/InfraAutomation/labs/4.2-kubernetes-argocd.md)
+- [4.3 - Kubernetes Automations](./modules/InfraAutomation/labs/4.3-kubernetes-automations.md)
+
+### Day 5
+- [5.1 - ArgoCD Blue Green](./modules/InfraAutomation/labs/5.1-argocd-blue-green.md)
+- [5.2 - Data Center DR](./modules/InfraAutomation/labs/5.2-data-center-dr.md)
