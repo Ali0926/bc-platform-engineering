@@ -169,3 +169,26 @@ This repository contains slides and hands-on labs for the Platform Engineering b
 ### Day 5
 - [5.1 - ArgoCD Blue Green](./modules/InfraAutomation/labs/5.1-argocd-blue-green.md)
 - [5.2 - Data Center DR](./modules/InfraAutomation/labs/5.2-data-center-dr.md)
+
+
+## Programming for Automation (Networking Focus)
+
+### Day 1
+- [1.1 - Python Basics](./modules/Programming-for-automation-networking/labs/1.1-python-basics.md)
+- [1.2 - Python venv](./modules/Programming-for-automation-networking/labs/1.2-python-venv.md)
+- [1.2 - VS Code SSH Setup](./modules/Programming-for-automation-networking/labs/1.2-vs-code-ssh-setup.md)
+- [1.3 - Python Module Basics](./modules/Programming-for-automation-networking/labs/1.3-python-module-basics.md)
+
+### Day 2
+- [2.1 - Python Data Structures](./modules/Programming-for-automation-networking/labs/2.1-python-data-structures.md)
+- [2.2 - Python OOP](./modules/Programming-for-automation-networking/labs/2.2-python-oop.md)
+- [2.3 - Python Comprehensions, Generators, Decorators](./modules/Programming-for-automation-networking/labs/2.3-python-Comprehensions-Generators-Decorators.md)
+
+### Day 3
+- [3.1 - Python Exception Handling](./modules/Programming-for-automation-networking/labs/3.1-python-Exception-Handeling.md)
+- [3.2 - Python IO & Serialization](./modules/Programming-for-automation-networking/labs/3.2-python-IO-Serialization.md)
+- [3.3 - Python & PowerShell](./modules/Programming-for-automation-networking/labs/3.3-python-powershell.md)
+
+### Day 4
+- [4.1 - Python Sockets](./modules/Programming-for-automation-networking/labs/4.1-python-sockets.md)
+- [4.2 - Python Project](./modules/Programming-for-automation-networking/labs/4.2-python-project.md)
