@@ -243,3 +243,20 @@ This repository contains slides and hands-on labs for the Platform Engineering b
 Other:
 - [Cleanup](./modules/Monitoring/labs/cleanup.md)
 
+## Storage Unit Labs
+
+### Day 1: Storage Basics
+- [1.1 - Lab 01](./modules/storage/1.1-Lab01.md)
+- [1.2 - Lab 02](./modules/storage/1.2-Lab02.md)
+
+### Day 2: Intermediate Storage
+- [2.1 - Lab 03](./modules/storage/2.1-Lab03.md)
+- [2.2 - Lab 04](./modules/storage/2.2-Lab04.md)
+
+### Day 3: Advanced Storage
+- [3.1 - Lab 05](./modules/storage/3.1-Lab05.md)
+
+### Day 4: Storage Operations
+- [4.1 - Lab 06](./modules/storage/4.1-Lab06.md)
+- [4.2 - Lab 07](./modules/storage/4.2-Lab07.md)
+
